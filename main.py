@@ -12,9 +12,11 @@ import os
 
 # 谷歌浏览器设置项
 chrome_options = Options()
+# 这三行代表设置 chrome 为无界面，方便 linux 服务器使用，windows 端调试时可以注释掉
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--hide-scrollbars')
 chrome_options.add_argument('--no-sandbox')
+
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('window-size=1920x1080')
 
