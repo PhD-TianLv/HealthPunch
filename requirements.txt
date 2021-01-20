@@ -1,0 +1,5 @@
+baidu-aip==2.2.18.0
+matplotlib==3.3.3
+Pillow==8.1.0
+selenium==3.141.0
+opencv-python
