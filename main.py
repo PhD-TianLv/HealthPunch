@@ -94,3 +94,10 @@ with open(result_path, 'w') as f:
 # 发送邮件，通知用户
 send_mails(result_path)
 print('邮件已发送完毕')
+
+
+
+#在不允许发送邮件的云服务器上,使用一下函数提供确认功能
+temp=open("log.txt", mode='a+')
+temp.write("\n----------------------------\n当前时间为:"+time.asctime( time.localtime(time.time()) )+"\n打卡任务已完成！\n----------------------------\n")
+temp.close()
